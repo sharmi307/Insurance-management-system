@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InsurancePro - Insurance Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🛡️ InsurancePro</h1>
+        <p>Your Trusted Insurance Management System</p>
+    </header>
+
+    <nav>
+        <a href="#dashboard">Dashboard</a>
+        <a href="#policies">Policies</a>
+        <a href="#claims">Claims</a>
+        <a href="#customers">Customers</a>
+        <a href="#agents">Agents</a>
+        <a href="#premium">Premium</a>
+        <a href="#renewals">Renewals</a>
+        <a href="#reports">Reports</a>
+        <a href="#login">Login</a>
+    </nav>
+
+    <main>
+        <section id="dashboard">
+            <h2>Dashboard</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>Total Policies</h3>
+                    <p id="policyCount">0</p>
+                </div>
+
+                <div class="card">
+                    <h3>Total Customers</h3>
+                    <p id="customerCount">0</p>
+                </div>
+
+                <div class="card">
+                    <h3>Total Claims</h3>
+                    <p id="claimCount">0</p>
+                </div>
+
+                <div class="card">
+                    <h3>Total Agents</h3>
+                    <p id="agentCount">0</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="policies">
+            <h2>Policy Management</h2>
+            <input type="text" id="policyName"
+                placeholder="Enter Policy Name">
+            <button onclick="addPolicy()">Add Policy</button>
+            <ul id="policyList"></ul>
+        </section>
+
+        <section id="claims">
+            <h2>Claims Management</h2>
+            <input type="text" id="claimName"
+                placeholder="Enter Claim Details">
+            <button onclick="addClaim()">Submit Claim</button>
+            <ul id="claimList"></ul>
+        </section>
+
+        <section id="customers">
+            <h2>Customer Management</h2>
+            <input type="text" id="customerName"
+                placeholder="Enter Customer Name">
+            <button onclick="addCustomer()">Add Customer</button>
+            <ul id="customerList"></ul>
+        </section>
+
+        <section id="agents">
+            <h2>Agent Management</h2>
+            <input type="text" id="agentName"
+                placeholder="Enter Agent Name">
+            <button onclick="addAgent()">Add Agent</button>
+            <ul id="agentList"></ul>
+        </section>
+
+        <section id="premium">
+            <h2>Premium Calculator</h2>
+            <input type="number" id="amount"
+                placeholder="Enter Insurance Amount">
+            <button onclick="calculatePremium()">
+                Calculate Premium
+            </button>
+            <p id="premiumResult"></p>
+        </section>
+
+        <section id="renewals">
+            <h2>Policy Renewals</h2>
+            <p>Manage your policy renewal reminders here.</p>
+        </section>
+
+        <section id="reports">
+            <h2>Reports</h2>
+            <p>View your insurance management summary.</p>
+            <button onclick="generateReport()">Generate Report</button>
+            <p id="reportResult"></p>
+        </section>
+
+        <section id="login">
+            <h2>Login / Register</h2>
+            <input type="email" placeholder="Enter Email">
+            <input type="password" placeholder="Enter Password">
+            <button onclick="demoLogin()">Login</button>
+            <p id="loginMessage"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 InsurancePro | Internship Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+              </html>
